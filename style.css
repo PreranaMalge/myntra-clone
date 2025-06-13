@@ -16,8 +16,16 @@
 }
 .nav ul li{
     list-style-type: none;
-    
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    border-bottom: none;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+    
 .list{
    gap: 20px; 
 }
@@ -25,10 +33,26 @@
     height: 30px;
     width: 300px;
 }
-.flat{
-    width: 1400px;
+.icon .text{
+    color: #282c3f;
+    font-weight: 700;
 }
-.custom{
+.heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: 0.1em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.carousel-inner .carousel-item {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;  
-}
+  }
+  .carousel-item img {
+    width: 16.66%;
+    object-fit: cover;
+  }
