@@ -1,20 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.image{
-    width: 200px;
+
+.image {
+    width: 150px;
 }
-.nav{
+ .search-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+  }
+
+  .search-container input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Add left padding for icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+
+.nav {
     display: flex;
     gap: 30px;
     align-items: center;
 }
+
 .nav ul {
- display: flex;  
+    display: flex;
 }
-.nav ul li{
+
+.nav ul li {
     list-style-type: none;
     text-align: center;
     text-decoration: none;
@@ -25,19 +49,28 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-    
-.list{
-   gap: 20px; 
+
+.list {
+    gap: 20px;
 }
-.input{
+
+.input {
     height: 30px;
     width: 300px;
 }
-.icon .text{
+
+.icon .text {
     color: #282c3f;
     font-weight: 700;
 }
-.heading{
+
+.icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
     text-transform: uppercase;
     color: #3e4152;
     letter-spacing: 0.1em;
@@ -47,12 +80,75 @@
     font-weight: 700;
 }
 
-.carousel-inner .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .carousel-item img {
+.w-20 {
+    width: 20%;
+}
+
+.w-16 {
     width: 16.66%;
-    object-fit: cover;
-  }
+}
+
+.footer {
+    background-color: #FAFBFC;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #282c3f;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-section ul li {
+    color: #696b79;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+.images img {
+    width: 120px;
+    margin-right: 8px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.original {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 250px;
+}
+
+.original-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.original-item img {
+    width: 40px;
+    height: auto;
+}
+
+.original-item p {
+    font-size: 13px;
+    color: #282c3f;
+}
